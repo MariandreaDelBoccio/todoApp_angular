@@ -1,0 +1,29 @@
+* {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.container {
+    margin: 50px auto;
+    margin-top: 100px;
+    width: 30%;
+}
+
+input {
+    margin-right: 15px;
+}
+
+.listas {
+    list-style: none;
+}
+
+.listas button {
+    text-align: right;
+}
+
+button {
+    cursor: pointer;
+}
+
+.botonDelete {
+    margin-left: 100px;
+}

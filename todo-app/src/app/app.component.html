@@ -1,0 +1,21 @@
+<div class="container">
+    <form>
+        <div class="form-group">
+            <h1 class="text-center text-primary">Lista de tareas</h1>
+            <div class="input-group-prepend"> <input type="text" #todo class="form-control"
+                    placeholder="Añade una tarea" name="todo" ngModel> <button class="botonAdd" class="input-group-text"
+                    (click)="addTodo(todo.value)">Añadir</button>
+            </div>
+        </div>
+    </form>
+
+
+    <div class="data">
+        <ul class="list-instyled">
+            <div class="listas">
+                <li *ngFor="let todo of todoArray">{{todo}}<button class="btn btn-outline-primary btn-sm botonDelete"
+                        (click)="deleteTodo(todo)">Delete</button></li>
+            </div>
+        </ul>
+    </div>
+</div>
